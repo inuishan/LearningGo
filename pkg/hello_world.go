@@ -11,7 +11,8 @@ func main() {
 	rand2.Seed(time.Now().UTC().UnixNano())
 	fmt.Println("Hello")
 	//sqrt()
-	pointerExample()
+	//pointerExample()
+	structExample()
 }
 
 func rand() int {
@@ -40,6 +41,8 @@ func structExample() {
 
 	v := Vector{1, 2}
 	p := &v
-	p.X = 4 // WHaaaaaat!!, shouldn't it be (*p).X = 4??
+	p.X = 4 // Whaaaaaat!!, shouldn't it be (*p).X = 4??
 	fmt.Println(v)
+	fmt.Println(p)
+	fmt.Println(*p)
 }
