@@ -11,5 +11,5 @@ func main()  {
 }
 
 func rand() {
-	fmt.Println("A random number {}", rand2.Intn(7))
+	fmt.Println("A random number ", rand2.Intn(7))
 }
