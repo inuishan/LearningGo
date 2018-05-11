@@ -31,3 +31,15 @@ func pointerExample() {
 	fmt.Println(*p)
 	fmt.Println(&p)
 }
+
+func structExample() {
+	type Vector struct {
+		X int
+		Y int
+	}
+
+	v := Vector{1, 2}
+	p := &v
+	p.X = 4 // WHaaaaaat!!, shouldn't it be (*p).X = 4??
+	fmt.Println(v)
+}
